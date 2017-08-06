@@ -1,0 +1,11 @@
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\Inshapardaz.Data\bin\Debug\netcoreapp1.1\Inshapardaz.Data.deps.json
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\Inshapardaz.Data\bin\Debug\netcoreapp1.1\Inshapardaz.Data.dll
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.csprojResolveAssemblyReference.cache
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.AssemblyInfo.cs
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\bin\Debug\netcoreapp1.1\Inshapardaz.Data.deps.json
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.csprojResolveAssemblyReference.cache
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.AssemblyInfo.cs
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\bin\Debug\netcoreapp1.1\Inshapardaz.Data.dll
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\bin\Debug\netcoreapp1.1\Inshapardaz.Data.pdb
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.dll
+C:\code\inshapardaz\Inshapardaz.Data\src\Inshapardaz.Data\obj\Debug\netcoreapp1.1\Inshapardaz.Data.pdb
