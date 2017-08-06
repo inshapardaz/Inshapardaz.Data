@@ -2,6 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp1.1</TargetFramework>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Database schema for inshapardaz</Description>
+        <PackageProjectUrl>https://inshapardaz.github.io/api/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/inshapardaz/Inshapardaz.Data</RepositoryUrl>
+        <RepositoryType />
     </PropertyGroup>
 
     <ItemGroup>
