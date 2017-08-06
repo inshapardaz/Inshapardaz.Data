@@ -2,11 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard1.6</TargetFramework>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <Description>Database schema for inshapardaz</Description>
-        <PackageProjectUrl>https://inshapardaz.github.io/api/</PackageProjectUrl>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+        <Authors>Muhammad Umer Farooq</Authors>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/inshapardaz/Inshapardaz.Data</PackageProjectUrl>
         <RepositoryUrl>https://github.com/inshapardaz/Inshapardaz.Data</RepositoryUrl>
-        <RepositoryType />
+        <RepositoryType>Git</RepositoryType>
+        <PackageIconUrl>https://avatars3.githubusercontent.com/u/27545135?v=4&amp;amp;s=200</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>
