@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp1.1</TargetFramework>
+        <TargetFramework>netstandard1.6</TargetFramework>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Description>Database schema for inshapardaz</Description>
         <PackageProjectUrl>https://inshapardaz.github.io/api/</PackageProjectUrl>
