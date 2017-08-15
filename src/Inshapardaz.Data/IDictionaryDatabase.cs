@@ -5,7 +5,6 @@ namespace Inshapardaz.Data
 {
     public interface IDictionaryDatabase
     {
-        DbSet<Dictionary> Dictionary { get; set; }
         DbSet<Meaning> Meaning { get; set; }
         DbSet<Translation> Translation { get; set; }
         DbSet<Word> Word { get; set; }

@@ -11,7 +11,6 @@ namespace Inshapardaz.Data
         {
         }
 
-        public virtual DbSet<Dictionary> Dictionary { get; set; }
         public virtual DbSet<Meaning> Meaning { get; set; }
         public virtual DbSet<Translation> Translation { get; set; }
         public virtual DbSet<Word> Word { get; set; }
@@ -20,13 +19,6 @@ namespace Inshapardaz.Data
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Dictionary>(entity =>
-            {
-                entity.ToTable("Dictionary");
-                entity.Property(e => e.Name).HasMaxLength(255);
-                entity.Property(e => e.UserId).HasMaxLength(50);
-            });
-
             modelBuilder.Entity<Meaning>(entity =>
             {
                 entity.ToTable("Meaning");
@@ -53,11 +45,6 @@ namespace Inshapardaz.Data
                 entity.ToTable("Word");
 
                 entity.Property(e => e.DictionaryId).HasDefaultValueSql("1");
-
-                entity.HasOne(d => d.Dictionary)
-                    .WithMany(p => p.Word)
-                    .HasForeignKey(d => d.DictionaryId)
-                    .HasConstraintName("FK_Word_Dictionary");
             });
 
             modelBuilder.Entity<WordDetail>(entity =>

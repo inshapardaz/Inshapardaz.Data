@@ -9,9 +9,10 @@ using Inshapardaz.Data.Entities;
 namespace Inshapardaz.Data.Migrations
 {
     [DbContext(typeof(DictionaryDatabase))]
-    partial class DictionaryDatabaseModelSnapshot : ModelSnapshot
+    [Migration("20170815201412_RemovedDictionary")]
+    partial class RemovedDictionary
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2");
