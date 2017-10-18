@@ -1,9 +1,10 @@
+using System;
 using Inshapardaz.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inshapardaz.Data
 {
-    public interface IDictionaryDatabase
+    public interface IDictionaryDatabase : IDisposable
     {
         DbSet<Meaning> Meaning { get; set; }
         DbSet<Translation> Translation { get; set; }

@@ -1,6 +1,5 @@
 using Inshapardaz.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Inshapardaz.Data
 {
