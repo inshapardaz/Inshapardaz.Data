@@ -21,5 +21,6 @@ namespace Inshapardaz.Data.Entities
         public virtual ICollection<WordDetail> WordDetail { get; set; }
         public virtual ICollection<WordRelation> WordRelationRelatedWord { get; set; }
         public virtual ICollection<WordRelation> WordRelationSourceWord { get; set; }
+        public virtual Dictionary Dictionary { get; set; }
     }
 }
