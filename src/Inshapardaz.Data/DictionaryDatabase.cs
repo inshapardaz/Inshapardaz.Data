@@ -14,7 +14,6 @@ namespace Inshapardaz.Data
         public virtual DbSet<Meaning> Meaning { get; set; }
         public virtual DbSet<Translation> Translation { get; set; }
         public virtual DbSet<Word> Word { get; set; }
-        public virtual DbSet<WordDetail> WordDetail { get; set; }
         public virtual DbSet<WordRelation> WordRelation { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -30,9 +29,9 @@ namespace Inshapardaz.Data
             {
                 entity.ToTable("Meaning");
 
-                entity.HasOne(d => d.WordDetail)
+                entity.HasOne(d => d.Word)
                     .WithMany(p => p.Meaning)
-                    .HasForeignKey(d => d.WordDetailId)
+                    .HasForeignKey(d => d.WordId)
                     .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK_Meaning_WordDetail");
             });
@@ -41,9 +40,9 @@ namespace Inshapardaz.Data
             {
                 entity.ToTable("Translation");
 
-                entity.HasOne(d => d.WordDetail)
+                entity.HasOne(d => d.Word)
                     .WithMany(p => p.Translation)
-                    .HasForeignKey(d => d.WordDetailId)
+                    .HasForeignKey(d => d.WordId)
                     .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK_Translation_WordDetail");
             });
@@ -55,17 +54,6 @@ namespace Inshapardaz.Data
                       .WithMany(p => p.Word)
                       .HasForeignKey(d => d.DictionaryId)
                       .HasConstraintName("FK_Word_Dictionary");
-            });
-
-            modelBuilder.Entity<WordDetail>(entity =>
-            {
-                entity.ToTable("WordDetail");
-
-                entity.HasOne(d => d.WordInstance)
-                    .WithMany(p => p.WordDetail)
-                    .HasForeignKey(d => d.WordInstanceId)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_WordDetail_Word");
             });
 
             modelBuilder.Entity<WordRelation>(entity =>

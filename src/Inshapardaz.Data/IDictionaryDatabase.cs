@@ -10,7 +10,6 @@ namespace Inshapardaz.Data
         DbSet<Meaning> Meaning { get; set; }
         DbSet<Translation> Translation { get; set; }
         DbSet<Word> Word { get; set; }
-        DbSet<WordDetail> WordDetail { get; set; }
         DbSet<WordRelation> WordRelation { get; set; }
 
         int SaveChanges();
