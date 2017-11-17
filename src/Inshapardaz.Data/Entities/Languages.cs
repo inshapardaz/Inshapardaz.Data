@@ -7,7 +7,7 @@ namespace Inshapardaz.Data.Entities
         /// <summary>
         ///     The none.
         /// </summary>
-        [Description("نامعلوم")]
+        [Description("")]
         None,
 
         /// <summary>

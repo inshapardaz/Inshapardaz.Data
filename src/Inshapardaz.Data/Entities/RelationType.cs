@@ -4,6 +4,8 @@ namespace Inshapardaz.Data.Entities
 {
     public enum RelationType
     {
+        [Description("")]
+        None = 0,
         /// <summary>
         ///     The synonym.
         /// </summary>

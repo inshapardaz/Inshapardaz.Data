@@ -7,7 +7,7 @@ namespace Inshapardaz.Data.Entities
         /// <summary>
         ///     The none.
         /// </summary>
-        [Description("نامعلوم")]
+        [Description("")]
         None = 0x0000000000000000,
 
         /// <summary>
@@ -128,7 +128,62 @@ namespace Inshapardaz.Data.Entities
         ///     The ism alam.
         /// </summary>
         [Description("اسم علم")]
-        IsmAlam = 0x0000000001210000, 
+        IsmAlam = 0x0000000001210000,
+
+        /// <summary>
+        ///     The ism mosool.
+        /// </summary>
+        [Description("اسم موصول")]
+        IsmMosool = 0x0000000000510000,
+
+        /// <summary>
+        ///     The ism mujarrad.
+        /// </summary>
+        [Description("اسم مجرد")]
+        IsmMujarrad = 0x0000000000310000,
+
+        /// <summary>
+        ///     The ism kaifiat.
+        /// </summary>
+        [Description("اسم کیفیت")]
+        IsmKaifiat = 0x0000000000610000,
+
+        /// <summary>
+        ///     The ism hasil masdar.
+        /// </summary>
+        [Description("اسم حاصل مصدر")]
+        IsmHasilMasdar = 0x0000000000510000,
+
+        /// <summary>
+        ///     The ism jamid.
+        /// </summary>
+        [Description("اسم جامد")]
+        IsmJamid = 0x0000000000710000,
+
+        /// <summary>
+        ///     The ism maada.
+        /// </summary>
+        [Description("اسم مادہ")]
+        IsmMaada = 0x0000000000810000,
+
+        /// <summary>
+        ///     The ism addad.
+        /// </summary>
+        [Description("اسم عدد")]
+        IsmAddad = 0x0000000000910000,
+
+        /// <summary>
+        ///     The ism muawqza.
+        /// </summary>
+        [Description("اسم معاوضہ")]
+        IsmMuawqza = 0x0000000000A10000,
+
+        /// <summary>
+        ///     The ism tashgeer.
+        /// </summary>
+        [Description("اسم تصغیر")]
+        IsmTashgeer = 0x0000000000B10000,
+
 
         /// <summary>
         ///     The khitaab.
@@ -250,59 +305,7 @@ namespace Inshapardaz.Data.Entities
         [Description("ضمیر اشارہ بعید")]
         IsmIsharaBaeed = 0x0000000002410000,
 
-        /// <summary>
-        ///     The ism mosool.
-        /// </summary>
-        [Description("اسم موصول")]
-        IsmMosool = 0x0000000000510000,
-
-        /// <summary>
-        ///     The ism mujarrad.
-        /// </summary>
-        [Description("اسم مجرد")]
-        IsmMujarrad = 0x0000000000310000, 
-
-        /// <summary>
-        ///     The ism kaifiat.
-        /// </summary>
-        [Description("اسم کیفیت")]
-        IsmKaifiat = 0x0000000000410000, 
-
-        /// <summary>
-        ///     The ism hasil masdar.
-        /// </summary>
-        [Description("اسم حاصل مصدر")]
-        IsmHasilMasdar = 0x0000000000510000, 
-
-        /// <summary>
-        ///     The ism jamid.
-        /// </summary>
-        [Description("اسم جامد")]
-        IsmJamid = 0x0000000000610000, 
-
-        /// <summary>
-        ///     The ism maada.
-        /// </summary>
-        [Description("اسم مادہ")]
-        IsmMaada = 0x0000000000710000, 
-
-        /// <summary>
-        ///     The ism addad.
-        /// </summary>
-        [Description("اسم عدد")]
-        IsmAddad = 0x0000000000810000, 
-
-        /// <summary>
-        ///     The ism muawqza.
-        /// </summary>
-        [Description("اسم معاوضہ")]
-        IsmMuawqza = 0x0000000000910000,
-
-        /// <summary>
-        ///     The ism tashgeer.
-        /// </summary>
-        [Description("اسم تصغیر")]
-        IsmTashgeer = 0x0000000000A10000,
+   
 
         /// <summary>
         ///     The sift zati.
