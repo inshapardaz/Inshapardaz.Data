@@ -25,6 +25,17 @@ namespace Inshapardaz.Data
                 entity.Property(e => e.UserId).HasMaxLength(50);
             });
 
+            modelBuilder.Entity<Word>(entity =>
+            {
+                entity.ToTable("Word");
+
+                entity.HasOne(d => d.Dictionary)
+                      .WithMany(p => p.Word)
+                      .HasForeignKey(d => d.DictionaryId)
+                      .HasConstraintName("FK_Word_Dictionary")
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
             modelBuilder.Entity<Meaning>(entity =>
             {
                 entity.ToTable("Meaning");
@@ -32,8 +43,8 @@ namespace Inshapardaz.Data
                 entity.HasOne(d => d.Word)
                     .WithMany(p => p.Meaning)
                     .HasForeignKey(d => d.WordId)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_Meaning_WordDetail");
+                    .HasConstraintName("FK_Meaning_Word")
+                    .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Translation>(entity =>
@@ -43,18 +54,10 @@ namespace Inshapardaz.Data
                 entity.HasOne(d => d.Word)
                     .WithMany(p => p.Translation)
                     .HasForeignKey(d => d.WordId)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_Translation_WordDetail");
+                    .HasConstraintName("FK_Translation_WordDetail")
+                    .OnDelete(DeleteBehavior.Cascade);
             });
-            modelBuilder.Entity<Word>(entity =>
-            {
-                entity.ToTable("Word");
-
-                entity.HasOne(d => d.Dictionary)
-                      .WithMany(p => p.Word)
-                      .HasForeignKey(d => d.DictionaryId)
-                      .HasConstraintName("FK_Word_Dictionary");
-            });
+            
 
             modelBuilder.Entity<WordRelation>(entity =>
             {
@@ -63,14 +66,14 @@ namespace Inshapardaz.Data
                 entity.HasOne(d => d.RelatedWord)
                     .WithMany(p => p.WordRelationRelatedWord)
                     .HasForeignKey(d => d.RelatedWordId)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_WordRelation_RelatedWord");
+                    .HasConstraintName("FK_WordRelation_RelatedWord")
+                    .OnDelete(DeleteBehavior.Cascade);
 
                 entity.HasOne(d => d.SourceWord)
                     .WithMany(p => p.WordRelationSourceWord)
                     .HasForeignKey(d => d.SourceWordId)
-                    .OnDelete(DeleteBehavior.Restrict)
-                    .HasConstraintName("FK_WordRelation_SourceWord");
+                    .HasConstraintName("FK_WordRelation_SourceWord")
+                    .OnDelete(DeleteBehavior.Cascade);
             });
         }
     }
